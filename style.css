@@ -30,8 +30,23 @@ p {
     border-radius: 5px;
     height: 20px;
     background: transparent;
+    margin:10px
+}
+#addamount {
+    border-radius: 5px;
+    height: 20px;
+    background: transparent;
 }
 
+#submit{
+    background-color: rgb(36, 149, 241);
+    color:#ffff;
+    height:40px;
+    width:100px;
+    margin:20px;
+    border-width:0px;
+    border-radius:8px;
+}
 label {
     margin: 10px;
 }
