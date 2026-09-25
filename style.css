@@ -2,6 +2,7 @@
 .background1 {
     background-color: #d3e3e3;
     border-radius: 10px;
+    width:100%;
 }
 
 h1 {
@@ -24,6 +25,13 @@ p {
 .background2 {
     background-color: #c7f2f2;
     border-radius: 10px;
+    width:100%;
+    margin-bottom:15px;
+}
+.background3 {
+    background-color: #edf3f0;
+    border-radius: 10px;
+    width:100%;
 }
 
 #addexpense {
@@ -47,6 +55,38 @@ p {
     border-width:0px;
     border-radius:8px;
 }
+
+#submit:hover{
+    background-color: rgb(83, 79, 223);
+}
 label {
     margin: 10px;
+}
+#search{
+    border-radius: 5px;
+    height: 30px;
+    background: transparent;
+    margin:10px;
+    width:30%
+}
+.category{
+    width:20%;
+    height:30px;
+    border-radius: 5px;
+    background: transparent;
+    margin:10px;
+}
+.date{
+    width:20%;
+    height:30px;
+    border-radius: 5px;
+    background: transparent;
+    margin:10px;
+}
+.filter{
+    width:20%;
+    height:30px;
+    border-radius: 5px;
+    background: transparent;
+    margin:10px;
 }
