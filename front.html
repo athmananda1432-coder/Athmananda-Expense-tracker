@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Expense Tracker</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <script src="back.js" defer ></script>
 </head>
 <body>
+    <div class="background">
     <div class="background1">
         <h1>My Expenses</h1>
         <p>Total Spent</p>
-        <h1 class="amount">₹ <span id="total">100</span></h1>
+        <h1 class="amount">₹ <span id="total">0</span></h1>
     </div>
 
     <div class="background2">
         <form>
             <br>
-            <label for="addexpense">Transaction Name:</label>
+            <label for="addexpensename">Transaction Name:</label>
 
-            <input type="text" id="addexpense">
+            <input type="text" id="addexpensename" >
             <br>
             <label for="addamount">Transaction Amount:</label>
 
-            <input type="text" id="addamount">
+            <input type="text" id="addamount" >
             <br>
             <button type ="submit" id="submit">Add Expense</button>
         </form>
@@ -49,5 +51,10 @@
             <option class="filter">Filter by:Date</option>
         </select>
     </div>
+</div>
+
+<div id="listContainer">
+
+</div>
 </body>
 </html>
