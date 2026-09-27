@@ -6,6 +6,7 @@
     <title>Expense Tracker</title>
     <link rel="stylesheet" href="style.css">
     <script src="back.js" defer ></script>
+    
 </head>
 <body>
     <div class="background">
@@ -18,15 +19,16 @@
     <div class="background2">
         <form>
             <br>
-            <label for="addexpensename">Transaction Name:</label>
+            <label for="addexpensename">Category:  </label>
 
             <input type="text" id="addexpensename" >
             <br>
-            <label for="addamount">Transaction Amount:</label>
+            <label for="addamount">Transaction Amount: </label>
 
-            <input type="text" id="addamount" >
+            <input type="number" id="addamount" >
             <br>
-            <button type ="submit" id="submit">Add Expense</button>
+            <button id="submit">＋ Add Expense</button>
+            <button id="save">⎙   Save</button>
         </form>
     </div>
     <div class="background3">
@@ -53,7 +55,7 @@
     </div>
 </div>
 
-<div id="listContainer">
+<div id="listContainer1">
 
 </div>
 </body>

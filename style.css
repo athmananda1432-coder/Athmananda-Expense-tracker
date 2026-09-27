@@ -1,8 +1,10 @@
 
+
 .background1 {
-    background-color: #d3e3e3;
+    background-color: #FFFFFF;
     border-radius: 10px;
-    width:100%;
+    
+    margin:10px;
 }
 
 h1 {
@@ -23,15 +25,15 @@ p {
 }
 
 .background2 {
-    background-color: #c7f2f2;
+    background-color: #E2E8F0;
     border-radius: 10px;
-    width:100%;
-    margin-bottom:15px;
+    
+    margin:10px auto;
 }
 .background3 {
     background-color: #edf3f0;
     border-radius: 10px;
-    width:100%;
+   
 }
 
 #addexpensename {
@@ -47,17 +49,32 @@ p {
 }
 
 #submit{
-    background-color: rgb(36, 149, 241);
+    background-color:#2563EB;
     color:#ffff;
     height:40px;
-    width:100px;
+    width:120px;
     margin:20px;
     border-width:0px;
     border-radius:8px;
+    cursor:pointer;
+}
+#save{
+    background-color:#4a1e91;
+    cursor:pointer;
+    color:#ffff;
+    height:40px;
+    width:120px;
+    margin:10px;
+    border-width:0px;
+    border-radius:8px;
+
+}
+#save:hover{
+    background-color: rgb(185, 184, 194);
 }
 
 #submit:hover{
-    background-color: rgb(83, 79, 223);
+    background-color: rgb(5, 4, 26);
 }
 label {
     margin: 10px;
@@ -67,17 +84,17 @@ label {
     height: 30px;
     background: transparent;
     margin:10px;
-    width:30%
+    
 }
 .category{
-    width:20%;
+    
     height:30px;
     border-radius: 5px;
     background: transparent;
     margin:10px;
 }
 .date{
-    width:20%;
+    
     height:30px;
     border-radius: 5px;
     background: transparent;
@@ -89,4 +106,44 @@ label {
     border-radius: 5px;
     background: transparent;
     margin:10px;
+}
+.listContainer2{
+    border:2px solid black;
+    margin:10px;
+    border-radius: 6px;
+    display:flex;
+    flex-direction: row;
+   padding-left:20px;
+    background-color: #e6f6ff;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #096f92;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    gap:10px;
+    padding:12px 16px
+}
+
+.deleteIcon{
+    
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+
+.editIcon{
+    margin-left:auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
 }
