@@ -55,6 +55,8 @@ submit.onclick=function(event){
 
     deleteIcon.addEventListener("click",function(){
     listContainer1.removeChild(listContainer2)
+    counter=counter-parseInt(addamount.value)
+    total.innerText=counter
     })
 
     editIcon.addEventListener("click",function(){
@@ -62,12 +64,7 @@ submit.onclick=function(event){
         
     })
      
-    let data={
-        category:tName.value ,
-        amount:tAmount.value
-    }
-
-    localStorage.setItem("list",data)
+  
 
 
       }
