@@ -1,8 +1,10 @@
 let listBox = document.getElementById("listContainer1");
 let form = document.getElementById("expenseForm");
+
 let descriptionBox = document.getElementById("description");
 
 let amountBox = document.getElementById("addamount");
+
 let categoryBox = document.getElementById("categorySelect");
 
 
@@ -15,13 +17,13 @@ let addButton = document.getElementById("submit");
 let cancelButton = document.getElementById("cancelBtn");
 
 
-
+let emptyMessage = document.getElementById("emptyState");
 let totalText = document.getElementById("total");
 let searchBox = document.getElementById("search");
 
 let filterBox = document.getElementById("filterCategory");
 
-let emptyMessage = document.getElementById("emptyState");
+
 
 
 let expenses = [];
@@ -210,7 +212,7 @@ function makeCard(expense) {
 
   var amount = document.createElement("span");
   amount.className = "exp-amount";
-  amount.textContent = "₹" + showMoney(expense.amount);
+  amount.textContent = "₹ " + showMoney(expense.amount);
 
      var cat = document.createElement("span");
     cat.className = "exp-category";
@@ -262,9 +264,9 @@ function showList() {
     emptyMessage.hidden = false;
 
     if (expenses.length === 0) {
-      emptyMessage.textContent = "No expenses found. Add one above!";
+      emptyMessage.textContent = "No Expense";
     } else {
-      emptyMessage.textContent = "No matching expenses. Try a different search or filter.";
+      emptyMessage.textContent = "No matching expenses.";
     }
   } else {
     emptyMessage.hidden = true;
@@ -343,9 +345,6 @@ function startEdit(expense) {
        window.scrollTo(0, 0);
 }
 
-
-
-
 form.onsubmit = function (event) {
   event.preventDefault();
 
@@ -402,4 +401,4 @@ amountBox.oninput = function () {
 
     loadData();
  setToday();
-  showList();
+ showList();
